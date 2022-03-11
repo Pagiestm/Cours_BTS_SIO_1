@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Juste prix</title>
+	<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+
+	<style>
+		body {
+			text-align: center;
+		}
+		@keyframes bonjour {
+			25% {
+				color: yellow;
+			}
+			50% {
+				color: orangered;
+			}
+			75% {
+				color: red;
+			}
+			100% {
+				color: blue;
+			}
+		}
+		h1 {
+			animation: 1s bonjour infinite;
+		}
+	</style>
+	<body>
+		<h1 >Juste prix</h1>
+		<audio controls autoplay>
+		  <source src="musique-le-juste-prix.mp3" type="audio/mpeg" id="audio">
+		</audio>
+		<p>Votre nombre : <input type="number" name="Nombre" id="nb"></p>
+		<button onclick="justeprix()">Envoyer</button>
+		<br>
+
+		<div id="reslutat">
+		<script type="text/javascript">
+			nombreadeviner = Math.floor(Math.random() * 500);
+			console.log(nombreadeviner);
+			c = 0;
+			nombretentatives = 8;
+			function justeprix(){
+				c+=1
+				var nb = parseInt(document.getElementById("nb").value, 10);
+				if (nb > nombreadeviner && c<=nombretentatives) {
+					document.getElementById("reslutat").innerHTML+=nb+" : Vous êtes au dessus<br>";
+				}
+				else if (nb < nombreadeviner && c<=nombretentatives) {
+					document.getElementById("reslutat").innerHTML+=nb+" : Vous êtes en dessous<br>";
+				}
+				else if (nb == nombreadeviner && c<=nombretentatives) {
+					document.getElementById("reslutat").innerHTML+=nb+" : Vous avez trouvé !<br>";
+					document.getElementById("reslutat").innerHTML+="Nombre de tentatives : "+c+"<br>";
+				}
+				else {
+					document.getElementById("reslutat").innerHTML+="Vous avez dépassé le nombre de tentatives !<br>";
+				}
+			}
+		</script>
+
+	<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d75f93938263aa5',m:'jB_5VavLSmqJ4JnDHeBe6jU5.Sxb4oyOHFUelyDtels-1643831689-0-Ab0HqbWoKJTrcFNwTlRPvZShNnAQMm4oZYMpDSUI4zEBFklvtbVWJsd9KWXMpAgMQjDmQuUyVT6cn8Z1B9fykmsSJKU5haReLsXKBxkMcWIW2BboGE51blh39Vr3K2ZagCaO0zHe9g+M7hjBmUzKi5tT+M1VsDzxzQ+/yHU7aLI5b/CLcbQ44qp1mR17ESjfRb/LweHQO5wp07HRNRzOeGc=',s:[0xdfe252d2b6,0xb84617eb24],}})();</script></body>
+</html>

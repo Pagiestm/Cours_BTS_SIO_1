@@ -1,0 +1,98 @@
+.images{
+    text-align: center;
+}
+h1{
+    text-decoration: underline black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow:0 0 20px #00FFFC,2px 3px 3px #141414, 0 0 100px #00D4D1;color:#00FFFC;
+    text-align: left;
+    margin: 5%;
+}
+.tableau{
+    display: flex;
+    justify-content:space-around;
+}
+#rengement{
+    border-collapse: collapse;
+    width: 400px;
+    height: 250px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 10px 5px 5px #00FFFC;
+}
+th, td{
+    border: 0.5px solid #00FFFC;
+    text-align: center;
+    color: #00FFFC;
+    text-shadow: 0;display:box; background: #141414; padding: 10px;color:#00FFFC;
+  }
+  .text{
+      text-align: center;
+  }
+  body{
+      background-image: url(fond1.jpg);
+  }
+#carte{
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    box-shadow:  1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    background-size: 150%;
+}
+.gagnant{
+    color:#00FFFC;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#joueur{
+    width: 150px;
+    height: 150px;
+}
+h2{
+    text-align: left;
+    margin: 5%;
+    text-decoration: underline black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow:0 0 20px #00FFFC,2px 3px 3px #141414, 0 0 100px #00D4D1;color:#00FFFC;
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000,
+     1px 1px 2px #141414,
+     1px 1px 3px #141414,
+     1px 1px 5px #141414,
+     1px 1px 7px #141414,
+     1px 1px 10px #141414,
+     1px 1px 12px #141414,
+     1px 1px 18px #141414;color:#fff;
+    text-align: left;
+    margin: 5%;
+    text-align: center;
+}
+.box [type ="submit" ]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #00FFFC;
+    padding: 14px 10px;
+    width: 150px;
+    outline: none;
+    color: red;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline red;
+    }
+.box [type ="submit" ]:hover{
+    background: #00FFFC;
+}
+#texte{
+    width: 50%;
+    margin: 5%;
+    text-align: left;
+}

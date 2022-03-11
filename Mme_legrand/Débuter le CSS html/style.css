@@ -1,0 +1,60 @@
+h1 {                                            /*cibler toute les balises*/
+    color: salmon;                            /*mettre une couleur*/
+}
+
+#prenom {                                       /* cibler un élément grâce à son id*/
+    font-weight: bold;                          /* mettre en gras */
+    font-size: 30px;                            /*modifier la taille de la police*/
+    font-family: Elysian field;                 /*modifier la police*/
+    color: salmon;
+    font-style: italic;                         /*modifie le style d'écriture*/
+}
+
+
+body{          
+    background-image: url(bleu-ardoise.jpg);   /*introduire une image de fond*/
+    color: white;
+    background-size: 50%;                      /*taille des images d'arrière-plan*/
+}
+
+.colonne {
+    width: 300px;                              /*longeur de la zone de contenue*/
+    border: 3px solid salmon;                /* paramètre de la bordure (taille + couleur)*/
+}
+
+.centrer {
+    text-align: center;                        /*alignement horizontal du texte*/
+}
+#container p {
+    border: 2px solid salmon;
+    background-color: navy;         /*background-color permet de définir la couleur utilisée pour l'arrière-plan d'un élément*/
+    color: white;
+}
+#paragraphe1 {
+    padding: 10px;                   /* padding: défini les différents écarts de remplissage sur les quatre côtés d'un élément*/
+    margin: 50px 0px 10px 20px;      /*margin: définit la taille des marges sur les quatre côtés de l'élément*/                      
+}
+#paragraphe2{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+}
+.box div{
+    background-color: black;
+    font-weight: bold;
+    color: orange;
+    width: 20%;
+    height: 200px;
+}
+
+
+
+
+@font-face {
+    font-family: "Elysian field";
+    src: url('Elysian\ Fields.otf');           /*ajout d'une police*/
+}

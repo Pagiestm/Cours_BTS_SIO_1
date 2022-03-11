@@ -1,0 +1,29 @@
+2// Fonctionnalités du Shell.
+
+2.1) echo $HOME
+
+2.2) set
+
+2.3) echo $TEST
+
+2.4) set -o nounset
+
+2.5) PATH=$PATH:/opt
+
+2.6) export EVEN=maintenant
+
+2.7) printmv
+
+2.8) alias ls='ls-a'
+
+2.9) alias
+
+2.10) unalias -a ls
+
+2.11) history
+
+2.12) !ls
+
+2.13) export HISTSIZE=2000
+
+2.14) 

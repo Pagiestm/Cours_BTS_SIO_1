@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tuto JS</title>
+    </head>
+    <body>
+        <h1>JavaScript</h1>
+        
+        <div id="sommaire">
+            <p>Voici le sommaire :</p>    
+        </div>
+        
+        <div id="video" style="display:none">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3o533dBlhZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <button onclick="changeColor()">Changer de couleur</button>
+        <button onclick="video()">Afficher la vidéo</button>
+        
+        <script type="text/javascript">        
+            var prenom = "Arthur";
+            var age = 18;//prompt ("qu'elle est votre âge ?");
+            //concaténation avec un +
+            console.log("Je m'appelle" + prenom+ ' ! ');
+            
+            if (age >= 18) {
+                alert("Vous pouvez avoir le permis en France")
+                
+            } else if (age >= 16){ 
+                alert("Vous pouvez avoir le permis aux USA")
+                
+            } else {
+                alert("Vous n'avez pas l'âge requit pour avoir le permis")
+            }
+            
+            //var exit = confirm("Voulez-vous quitter la page ?");
+            //console.log(exit);
+            
+            function addition(nb1, nb2) {
+                var total = nb1 + nb2;
+                return total;
+            }
+            
+            var res = addition(8,8);
+            console.log(res);
+            
+            
+            function changeColor() {
+                var element = document.getElementById("sommaire");
+                if (element.style.color == "blue") {
+                    element.style.color = "black";
+            } else {
+                    element.style.color = "blue";
+            }
+            }
+            
+            function video() {
+                var element = document.getElementById("video");
+                if (element.style.display == "none") {
+                    element.style.display = "block";
+            } else {
+                    element.style.display = "none";
+            }
+            }
+
+            
+
+        </script>
+    
+    </body>
+
+
+
+</html>

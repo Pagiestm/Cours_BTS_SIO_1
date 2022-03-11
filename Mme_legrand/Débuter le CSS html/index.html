@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>SIO GB</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+
+		<header>
+		<h1>Le BTS SIO</h1>
+		</header>
+		<br>
+		<p>Bienvenue dans la classe <br>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+		<a href="https://www.lipsum.com/" target="_blank"><img src="img/background-image.png" title="fleur" alt="fleur" class="img"></a>
+		<br>		
+
+		<ul>
+			<li><a href="tel:0781307497">Tel</a></li>
+			<li><a href="mailto:gabet.thibaut@gmail.com">gmail</a></li>
+		</ul>
+
+		<ol>
+			<li>Titre 1</li>
+			<li>Titre 2</li>
+		</ol>
+
+		<br>
+
+		<table>
+			<thead>
+			 	<tr>
+					<th>Titre</th>
+					<th>Nom</th>
+					<th>Prénom</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td colspan="2" rowspan="2" style="background-color: blue">Film</td>
+					<td style="background-color: green">Auteur</td>
+				</tr>
+				<tr>
+					<td style="background-color: green">Compositeur</td>
+				</tr>
+				<tr>
+					<td style="background-color: red">60</td>
+					<td style="background-color: red">Disney</td>
+					<td rowspan="2" style="background-color: blue">2020</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="background-color: green">123</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="container" id="formulaire">
+			<h1 class="titre-f">Formulaire</h1>
+
+			<form method="POST" action="traitement.php">
+			    <div class="design">
+			    	<i class="fas fa-user"></i>
+			        <input type="text" name="nom" placeholder="Nom" id="nom" required>
+			    </div>
+			    <div class="design">
+			        <i class="fas fa-user"></i>
+			        <input type="text" name="prenom" placeholder="Prénom" id="Prenom" required>
+			    </div>
+
+	            <div class="wrapper">
+	              <input type="radio" name="select" id="option-1">
+	              <input type="radio" name="select" id="option-2">
+	              <input type="radio" name="select" id="option-3">
+	              <label for="option-1" class="option option-1">
+	                <div class="dot"></div>
+	                <span> Femme</span>
+	              </label>
+	              <label for="option-2" class="option option-2">
+	                <div class="dot"></div>
+	                <span> Homme</span>
+	              </label>
+	              <label for="option-3" class="option option-3">
+	                <div class="dot"></div>
+	                <span> Autre</span>
+	              </label>	  
+	            </div>
+
+			    <div>
+			    	<p>Pays: 
+						<select name="pays">
+							<option value="France" selected="selected">France </option>
+							<option value="Espagne">Espagne </option>
+						</select>
+					</p>
+			    </div>
+
+			    <div class="design">
+			    	 <i class="fas fa-lock"></i>
+			    	 <input type="password" placeholder="Mot de passe" name="psw" id="psw" required>
+			    </div>
+				<div>
+				  <input type="checkbox" id="cvg" name="cvg" checked>
+				  <label for="cvg">Accepter les CVG</label>
+				</div>
+
+				<input type="submit" value="Validé" class="btn solid" />
+			</form>
+
+		</div>
+	</body>
+</html>

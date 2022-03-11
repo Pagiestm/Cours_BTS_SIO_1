@@ -1,0 +1,33 @@
+3// Compression :
+
+3.1) tar -cvf etcppp.tar
+
+3.2) tar –list –verbose –file=etcppp.tar
+
+3.3) mkdir home/extraction-tar
+
+3.4) tar -xvzf etcppp.tar
+
+3.5) gzip -k etcppp.tar (automatiquement renommé en etcppp.tar.gz)
+
+3.6) bzip2 -k etcppp.tar (automatiquement renommé en etcppp.tar.bz2)
+
+3.7) diff -rq etcppp.tar.gz etcppp.tar.bz2 (L'algorithme .bz2 possède un meilleur taux de compression)
+
+3.8) rm etcppp.tar
+
+3.9) gunzip etcppp.tar.gz
+
+5// Identifier et résoudre les problèmes liés à une commande :
+
+5.1) Execution de la commande ls /var/logs
+
+5.2) ls : cannot acess 'var/logs' : No such file or directory (Ce message indique que sur ce répertoire il n'y a que les droits de lecture et du coup il ne possède pas les droits d'éxecution et d'écriture)
+
+5.3 et 5.4) tail -f /var/log/auth.log
+
+5.5 , 5.6 et 5.7) head -n 7 /etc/passwd (Avec un "n" minuscule)
+
+5.8 et 5.9) L'autorisation est refusé : impossible de créer un fichier normal.
+
+5.10) 

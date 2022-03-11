@@ -1,0 +1,51 @@
+.centrer {
+    display: flex;
+    justify-content:space-around;
+    margin: auto;
+}
+#titre1{
+    color: green;
+    font-weight: bold;
+}
+.image{
+    margin: auto;
+}
+.text {
+    padding: 30px;
+    margin: auto;
+}
+.acheter{
+       margin: auto;
+}
+#boutton1{
+    width: 200px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 5px;
+}
+#boutton2{
+    width: 200px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 5px;
+}
+.flex{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+.acheter{
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+
+}
+#acheter1{
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+}
+p{
+    font-size: 15px;
+}

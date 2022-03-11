@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tuto JS</title>
+</head>
+
+<body>
+    <h1>JavaScript</h1>
+
+    <div id="calculatrice">
+    </div>
+    <input type="number" placeholder="Nombre1" id="Nombre1">
+    <input type="number" placeholder="Nombre2" id="Nombre2">
+
+
+    <button onclick="addition()"> Addition</button>
+    <button onclick="soustraction()"> soustraction</button>
+    <button onclick="Multiplication()"> Multiplcation</button>
+    <button onclick="division()"> Division</button>
+
+    <script type="text/javascript">
+
+        function addition() {
+            var Nombre1 = parseInt(document.getElementById("Nombre1").value);
+            var Nombre2 = parseInt(document.getElementById("Nombre2").value);
+            var resultat = Nombre1 + Nombre2;
+            document.getElementById("calculatrice").innerHTML = resultat;
+        }
+        function soustraction() {
+            var Nombre1 = parseInt(document.getElementById("Nombre1").value);            // parseInt permet de récupérer un entier
+            var Nombre2 = parseInt(document.getElementById("Nombre2").value);
+            var resultat = Nombre1 - Nombre2;
+            document.getElementById("calculatrice").innerHTML = "Le résultat de la soustraction est : " + resultat;
+        }
+        function Multiplication() {
+            var Nombre1 = parseInt(document.getElementById("Nombre1").value); 
+            var Nombre2 = parseInt(document.getElementById("Nombre2").value);
+            var resultat = Nombre1 * Nombre2;
+            document.getElementById("calculatrice").innerHTML = "Le résultat de la multiplication est : " + resultat;
+        }
+        function division() {
+            var Nombre1 = parseInt(document.getElementById("Nombre1").value); 
+            var Nombre2 = parseInt(document.getElementById("Nombre2").value);
+            if (Nombre2 != 0) {
+                var resultat = Nombre1 / Nombre2;
+                document.getElementById("calculatrice").innerHTML = "Le résultat de la division est : " + resultat;
+            } else {
+                document.getElementById("calculatrice").innerHTML = "Il est impossible de diviser par 0 !";
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

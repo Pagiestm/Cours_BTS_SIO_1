@@ -1,0 +1,76 @@
+1// Gestion de fichier.
+
+
+1.1) Ouvrir un terminal avec VirtualBox avec mes identifiants.
+
+1.2) Pour afficher le répertoire courant utiliser pwd en l'occurence je me trouve actuellement dans le répertoire user.
+
+1.3) cd /etc
+
+1.4) cd ./skel
+
+1.5) cd ..
+
+1.6) ls
+
+1.7) ls -l
+
+1.8) ls s*
+
+1.9) file /etc/group
+
+1.10) tail -n 5 /etc/group
+
+1.11) cd /
+
+1.12) mkdir temp
+
+1.13) cp /etc/passwd temp
+
+1.14) sudo cp /etc/ssh -r /home/user
+
+1.15) mv /etc/ssh /etc/peers
+
+1.16) touch -a temp/passwd
+
+1.17) touch temp/test
+
+1.18) rm temp/passwd
+
+1.19) rm -r peers
+
+
+2// Fonctionnalités du Shell.
+
+2.1) echo $HOME
+
+2.2) set
+
+2.3) echo $TEST
+
+2.4) set -o nounset
+
+2.5) PATH=$PATH:/opt
+
+2.6) export EVEN=maintenant
+
+2.7) printmv
+
+2.8) alias ls='ls-a'
+
+2.9) alias
+
+2.10) unalias -a ls
+
+2.11) history
+
+2.12) !ls
+
+2.13) export HISTSIZE=2000
+
+2.14) 
+
+3//Compression
+
+
+

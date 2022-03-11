@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tuto JS</title>
+    </head>
+    <body>
+        <h1>JavaScript</h1>
+        <script type="text/javascript">
+          var prenom = "Théotime";
+          // déclartion de la variable age
+          var age = prompt("Quelle est ton âge ?");
+          //Conditions qui affiche une alerte 
+          //Pour préciser si vous avez le permis en FR(18) et au USA(16)
+          if (age >= 18) {
+            alert("permis en France et au USA");
+          }
+          else if (age >=16) {
+            alert ("permis au USA uniquement");
+          } else {
+            alert("Tu n'as pas encore l'âge !");
+        }
+        
+
+          //concaténation (mettre bout à bout) avec un + 
+          console.log("je m'appelle : " + prenom + " ! ");
+
+          alert("Attention VIRUS !!!")
+
+          var exit = confirm("Voulez-vous quitter la page")
+
+          function addition (nb1, nb2){
+            var total = nb1 + nb2;
+            return total;
+          }
+
+          var res = addition(8,8);
+          console.log(res);
+
+
+        </script>
+    </body>
+</html>
