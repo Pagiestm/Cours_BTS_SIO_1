@@ -1,0 +1,46 @@
+#submit {
+    margin-left: 125px;
+    margin-top: 10px;
+  }
+  
+  .label {
+    float: left;
+    width: 120px;
+  }
+  
+  .selectbox {
+    width: 200px;
+  }
+  
+  div {
+    padding: 5px;
+  }
+  
+  .cb {
+    margin-left: 125px;
+    margin-top: 10px;
+  }
+  
+  .radiobtn {
+    margin-left: 125px;
+    margin-top: 10px;
+  }
+  
+  .inputs {
+    background-color: cyan;
+  }
+  
+  fieldset {
+    border: 1px solid #888;
+  }
+  
+  legend {
+    border: 1px solid #888;
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em;
+  }
+  .error {
+    outline: 1px solid #f00;
+}

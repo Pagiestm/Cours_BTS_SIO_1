@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Validation jQuery</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+</head>
+
+<body>
+    <h1>Livraison rapide internationale</h1>
+    <form>
+        <fieldset>
+            <legend>Vos informations</legend>
+            <div>
+                <span class="label">Identifiant client</span>
+                <input type="text" name="idclient" />
+            </div>
+            <div>
+                <span class="label">Mot de passe</span>
+                <input id="password" type="password" name="mdp" />
+            </div>
+            <div>
+                <span class="label">Adresse email</span>
+                <input type="text" name="email" />
+            </div>
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>Votre commande</legend>
+            <div>
+                <span class="label">Sélectionnez les produits :</span>
+                <br />
+                <br />
+                <input type="checkbox" id="pizza" name="pizza" value="10" class="cb" />Pizza 10€<br />
+                <input type="checkbox" id="hotdog" name="hotdog" value="4" class="cb" />Hot Dog 4€<br />
+                <input type="checkbox" id="fites" name="frites" value="3" class="cb" />Frites 3€<br />
+                <input type="checkbox" id="boisson" name="boisson" value="2" class="cb" />Boisson 2€<br />
+            </div>
+            <div>
+                <span class="label">Paiement</span>
+                <br />
+                <input type="radio" name="paiement" class="radiobtn" value="Master Card" />Master Card<br />
+                <input type="radio" name="paiement" class="radiobtn" value="Visa" />Visa<br />
+                <input type="radio" name="paiement" class="radiobtn" value="Virement" />Virement<br />
+            </div>
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>Expédition</legend>
+            <div>
+                <span class="label">Pays</span>
+                <select class="selectbox">
+                    <option value="0">Pays d'expédition</option>
+                    <option value="France">France</option>
+                    <option value="Belgique">Belgique</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                    <option value="Japon">Guyane</option>
+                </select>
+            </div>
+        </fieldset>
+        <input id="submit" type="submit" value="Commander" />
+    </form>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#submit').click(function(){
+                if($('#myMessage').val() == ''){
+                   alert('Input can not be left blank');
+                }
+             });
+        });
+
+
+    </script>
+
+</body>
+
+</html>
