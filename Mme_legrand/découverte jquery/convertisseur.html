@@ -2,30 +2,43 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Découverte JQUERY</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <style>
+
+    </style>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
+
+
+
 </head>
 
 <body>
 
-    <h1>Convertisseur mètres en centimètres</h1>
-
-    Mètres : <input id="input1" type="text" name="valeur" value="" ><br>
-    <br>
-    Centimètres : <input id="input2" type="text" name="valeur" value="" >
-
+    <h1>Voici mon super convertisseur
+    </h1>
+    <label for="cm">Centimetres:</label>
+    <input type="text" id="cm" name="cm">
+    <label for="metre">Metres:</label>
+    <input type="text" id="metre" name="metre">
     <script type="text/javascript">
         $(document).ready(function () {
-            $("#input1").on("input",function() {
-                $('#input2').val($("#input1").val());
+            $('#cm').keyup(function () {
+                var text_value = $("#cm").val();
+                var calcule = (text_value / 100);
+                $("#metre").val(calcule);
             });
-            $("#input2").on("input",function() {
-                $('#input1').val($("#input2").val());
+            $('#metre').keyup(function () {
+                var text_value = $("#metre").val();
+                var calcule = (text_value * 100);
+                $("#cm").val(calcule);
             });
         });
     </script>
-
 </body>
-
 </html>
+
+
